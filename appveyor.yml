@@ -1,0 +1,13 @@
+version: '{build}'
+image: Visual Studio 2022
+stack: python 3.10
+skip_branch_with_pr: true
+init:
+- cmd: set PATH=C:\Python320;C:\Python310\Scripts;%PATH%
+install:
+- ps: python -m pip install --disable-pip-version-check --upgrade --no-warn-script-location pip build virtualenv wheel
+build_script:
+- ps: |
+    python -m pip install .
+test_script:
+- ps: python tests\test.py
