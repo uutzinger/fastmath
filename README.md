@@ -7,8 +7,7 @@ The fast inverse square root implementation in ```C``` is slower than value**-0.
 There is no speed increase from regular inverse square root to fast inverse square root.
 
 Built with [pybind11](https://github.com/pybind/pybind11).
-This requires Python 3.7+; for older versions of Python, check the commit
-history.
+This requires Python 3.7+.
 
 Urs Utzinger 2023
 
